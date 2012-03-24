@@ -1,4 +1,6 @@
 Litterbox::Application.routes.draw do
+  get "cats/show"
+
   get "home/index"
 
   devise_for :cats
