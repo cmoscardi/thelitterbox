@@ -1,4 +1,6 @@
 Litterbox::Application.routes.draw do
+  get "home/index"
+
   devise_for :cats
 
   # The priority is based upon order of creation:
