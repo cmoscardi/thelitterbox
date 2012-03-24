@@ -1,6 +1,12 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.2'
+gem "bson_ext", ">= 1.5.2"
+gem "mongoid", ">= 2.4.4"
+gem "devise", ">= 2.0.4"
+gem 'execjs'
+gem 'therubyracer'
+gem 'less-rails-bootstrap'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
