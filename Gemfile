@@ -6,7 +6,7 @@ gem "mongoid", ">= 2.4.4"
 gem "devise", ">= 2.0.4"
 gem 'execjs'
 gem 'therubyracer'
-gem 'less-rails-bootstrap'
+gem "twitter-bootstrap-rails"
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
