@@ -42,8 +42,9 @@
                <li>
                 <% if cat_signed_in? %>
             	<%= link_to("My Profile", cat_path(current_cat)) %> 
-	    		<% end %>              
-              <li><a href="edit.html">Edit</a></li>
+		<li><a href="/cats/edit.html">Edit</a></li>
+		<% end %>              
+              
               
             </ul>
             

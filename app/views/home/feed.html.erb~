@@ -1,0 +1,5 @@
+<% cats.each do |cat| %>
+<div><%= link_to(image_tag(cat.avatar(:thumb),cat_path(cat)) %> 
+  <%= link_to(cat.name, cat_path(cat) %>
+</div>
+<% end %>
