@@ -39,10 +39,9 @@ class Cat
   field :food, :type=> String
   field :picture, :type => String
 
-  has_mongoid_attached_file :avatar, :styles => 
+  has_mongoid_attached_file(:avatar, {:styles => 
     {:thumb => ['150x150', :jpg],
-     :medium => ['300x300', :jpg]
-    }, :default_url => "/images/:style/missing.png"
+     :medium => ['300x300', :jpg]}, :default_url => "/images/:style/missing.png"})
   attr_accessible :avatar 
 
   attr_accessible :name, :age, :gender, :orientation, :hometown,
