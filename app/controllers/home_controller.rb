@@ -3,9 +3,7 @@ class HomeController < ApplicationController
 
   def index
     if cat_signed_in? 
-      cat= Cat.find(params[:id])
-      redirect_to :controller => 'cats', :action => 'show'
+      redirect_to cat_path(current_cat)
     end
-
   end
 end

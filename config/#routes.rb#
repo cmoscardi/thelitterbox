@@ -1,10 +1,10 @@
 Litterbox::Application.routes.draw do
 
 
-
+  get "home/index"
 
   devise_for :cats
-  resources :cats, :only => :show
+  resource :cats, :only => :show
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
