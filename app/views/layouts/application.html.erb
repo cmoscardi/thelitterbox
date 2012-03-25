@@ -37,12 +37,12 @@
           <a class="brand" href="#">MeowSpace &hearts;</a>
           <div class="nav-collapse">
             <ul class="nav">
-              <li class="active"><a href="/home">Home</a></li>
+              <li class="active"><%= link_to("Home",root_path) %></li>
               
                <li>
                 <% if cat_signed_in? %>
             	<%= link_to("My Profile", cat_path(current_cat)) %> 
-		<li><a href="/cats/edit.html">Edit</a></li>
+		<li><%= link_to("Edit",edit_cat_registration_path(current_cat)) %></li>
 		<% end %>              
               
               
