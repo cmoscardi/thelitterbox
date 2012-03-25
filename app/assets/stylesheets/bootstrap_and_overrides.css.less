@@ -27,16 +27,27 @@ body { padding-top: 60px; }
  
 @import url(http://fonts.googleapis.com/css?family=Lobster);
 
-.hero-unit h2 {
-	font-family: Lobster;
-	margin-bottom: 0;
-	font-size: 60px;
-	line-height: 1;
-	color: inherit;
-	letter-spacing: -1px;
+@accentFontFamily: "Lobster", cursive;
+
+.hero-unit accent {
+	font-family: @accentFontFamily;
 }
 
+.navbar .brand {
+	float: left;
+	display: block;
+	padding: 8px 20px 12px;
+	margin-left: -20px;
+	font-size: 20px;
+	font-weight: 200;
+	line-height: 1;
+	color: white;
+	font-family: Lobster, cursive;
+}
 
+.icon-heart{
+	color: white;
+}
 
 
 
