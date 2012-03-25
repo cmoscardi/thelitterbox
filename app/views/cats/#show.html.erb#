@@ -1,0 +1,19 @@
+<h1><%= @cat.name %>'s Profile 
+<a class="btn btn-primary btn-medium">Meow @ me! &hearts; </a></h1>  
+
+<br></br>
+<p><%= image_tag(current_cat.avatar.url(:medium)) %></p>
+
+<p>Name: <%= @cat.name %></p>
+<p>Age: <%= @cat.age %></p>
+<p>Gender: <%= @cat.gender %></p>
+<p>Orientation: <%= @cat.orientation %></p>
+<p>Hometown: <%= @cat.hometown %></p>
+<p>Looking for: <%= @cat.looking_for %></p>
+<p>Status: <%= @cat.relationship_status %></p>
+<p>Religious views: <%= @cat.religious_views %></p>
+<p>Interests: <%= @cat.interests %></p>
+<p>Favorite food: <%= @cat.food %></p>
+
+
+  
