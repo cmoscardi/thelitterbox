@@ -2,7 +2,6 @@ Litterbox::Application.routes.draw do
 
 
 
-
   devise_for :cats
   resources :cats, :only => :show
 
@@ -10,7 +9,9 @@ Litterbox::Application.routes.draw do
   # first created -> highest priority.
   
   root :to => 'home#index'
-
+  
+  match 'about' => 'home#about'
+  match 'contact' => 'home#contact'
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
