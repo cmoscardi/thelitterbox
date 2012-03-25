@@ -63,6 +63,9 @@ Litterbox::Application.configure do
 
   #action mailer
   config.action_mailer.default_url_options = { :host => 'heroku.com' }
-  
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.perform_deliveries = false
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.default :charset => "utf-8"
 
 end
