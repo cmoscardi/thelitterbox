@@ -1,5 +1,6 @@
 class Cat
   include Mongoid::Document
+  include Mongoid::Paperclip
   # Include default devise modules. Others available are:
   # :token_authenticatable, :encryptable, :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
@@ -37,6 +38,12 @@ class Cat
   field :interests, :type => String
   field :food, :type=> String
   field :picture, :type => String
+
+  has_mongoid_attached_file :avatar, :styles => 
+    {:thumb => ['150x150', :jpg],
+     :medium => ['300x300', :jpg]
+    }
+  attr_accessible :avatar 
 
   attr_accessible :name, :age, :gender, :orientation, :hometown,
   :looking_for, :relationship_status, :religious_views, :interests,

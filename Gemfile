@@ -7,6 +7,8 @@ gem "devise", ">= 2.0.4"
 gem 'execjs'
 gem 'therubyracer'
 gem "twitter-bootstrap-rails"
+gem "mongoid-paperclip", :require => "mongoid_paperclip"
+
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'

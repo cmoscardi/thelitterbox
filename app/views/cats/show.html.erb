@@ -2,7 +2,7 @@
 <a class="btn btn-primary btn-medium">Meow @ me! &hearts; </a></h1>  
  
 <br></br>
-<p>Picture: <%= @cat.picture %></p>
+<p><%= image_tag(current_cat.avatar.url(:medium)) %></p>
 
 <p>Name: <%= @cat.name %></p>
 <p>Age: <%= @cat.age %></p>
